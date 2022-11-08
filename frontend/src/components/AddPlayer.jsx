@@ -28,7 +28,12 @@ const AddPlayer = () => {
             })
             const data = await res.json()
             console.log(data);
-            window.location.reload()
+            if (res.status === 200) {
+                window.location.reload()
+            }
+            if (res.status === 422) {
+                window.alert(data.message)
+            }
         } catch (error) {
             console.log(error);
         }
