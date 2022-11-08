@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+h1,
+h2,
+p,
+a,
+ul,
+li,
+input,
+select,
+option,
+button {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: #000;
+  list-style-type: none;
+}
+h1 {
+  font-size: 1.5rem;
+}
+.table {
+  min-width: 576px !important;
+}
+.table th,
+.table td {
+  width: 25%;
+}
