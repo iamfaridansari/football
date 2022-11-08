@@ -6,7 +6,7 @@ const Players = () => {
     const [players, setPlayers] = useState([])
     const fetchPlayers = async () => {
         try {
-            const res = await fetch("/fetchplayers")
+            const res = await fetch("https://football-iamfaridansari.herokuapp.com/fetchplayers")
             const data = await res.json()
             console.log(data);
             if (res.status === 200) {
@@ -23,7 +23,7 @@ const Players = () => {
     // delete player
     const deletePlayer = async (id) => {
         try {
-            const res = await fetch("/deleteplayer", {
+            const res = await fetch("https://football-iamfaridansari.herokuapp.com/deleteplayer", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

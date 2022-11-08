@@ -17,7 +17,7 @@ const AddPlayer = () => {
         e.preventDefault()
         const { name, availability } = player
         try {
-            const res = await fetch("/addplayer", {
+            const res = await fetch("https://football-iamfaridansari.herokuapp.com/addplayer", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
